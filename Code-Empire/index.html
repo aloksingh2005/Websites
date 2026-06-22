@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Business Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS -->
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>CodeEmpire</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="nav-spacer"></div>
+                <a href="#contact" class="nav-btn">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">
+                We Create Digital
+                <span class="type-writer"></span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                Transform your business with cutting-edge technology solutions
+            </p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#services" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="img/hero/hero.png" alt="Digital Solutions" class="hero-img">
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content" data-aos="fade-right">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Creating Digital Excellence Since 2010</p>
+                <div class="about-text">
+                    <p>We are a team of passionate developers and designers dedicated to creating exceptional digital
+                        experiences. With over a decade of expertise in web and mobile development, we combine technical
+                        excellence with creative innovation to deliver solutions that drive business growth.</p>
+                    <p>Our approach is client-focused, collaborative, and results-driven. We believe in building
+                        long-term partnerships with our clients, understanding their unique challenges, and delivering
+                        tailored solutions that exceed expectations.</p>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-item" data-aos="fade-up">
+                        <span class="stat-number" data-target="500">0</span>+
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <!-- More stat items -->
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <span class="stat-number" data-target="100">0</span>+
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <span class="stat-number" data-target="15">0</span>+
+                        <span class="stat-label">Years of Experience</span>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                        <span class="stat-number" data-target="25">0</span>+
+                        <span class="stat-label">Awards Won</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <!-- Image slider here -->
+                <img src="img\about\about.png" alt="Our Team" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Custom websites and web applications...</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+                <!-- More service cards -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>App Development</h3>
+                        <p>Native and cross-platform mobile applications</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>React Native</li>
+                            <li>Flutter</li>
+                            <li>Swift & Kotlin</li>
+                        </ul>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered design with modern aesthetics</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                            <li>Sketch</li>
+                        </ul>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Work</h2>
+            <div class="portfolio-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="img/portfolio/web-development.png" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3> Website Development </h3>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <!-- Add more portfolio items with proper data-category -->
+                <div class="portfolio-item" data-category="web">
+                    <img src="img/portfolio/ecommerce-platform.png" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Platform</h3>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="img/portfolio/mobile-app-development.png" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App UI</h3>
+                        <p>App Development</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="img\portfolio\brand-identity-design.png" alt="Project 4">
+                    <div class="portfolio-overlay">
+                        <h3>Brand Identity</h3>
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="img/portfolio/corporate-website.png" alt="Project 5">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Website</h3>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="img/portfolio/e-learning-platform.png" alt="Project 6">
+                    <div class="portfolio-overlay">
+                        <h3>E-Learning Platform</h3>
+                        <p>App Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Client Testimonials</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Amazing work and great service!"</p>
+                        <div class="client-info">
+                            <img src="img/testimonials/testimonial1.png" alt="Client 1">
+                            <h4>John Doe</h4>
+                            <span>CEO, Company Name</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more testimonial slides -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The team delivered beyond our expectations. They understood our vision perfectly and
+                            transformed it into reality."</p>
+                        <div class="client-info">
+                            <img src="img/testimonials/testimonial2.png" alt="Client 2">
+                            <h4>Jane Smith</h4>
+                            <span>Marketing Director, Tech Corp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Professional, responsive, and incredibly talented. Our website traffic increased by 200%
+                            after the redesign."</p>
+                        <div class="client-info">
+                            <img src="img/testimonials/testimonial3.png" alt="Client 3">
+                            <h4>Robert Johnson</h4>
+                            <span>Founder, Startup X</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form" data-aos="fade-right">
+                    <!-- Form fields -->
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" rows="5" class="form-control"
+                            placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-map" data-aos="fade-left">
+                    <!-- Google Maps -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1627309493842!5m2!1sen!2sin"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="contact-info-box">
+                        <h3>Contact Information</h3>
+                        <ul class="contact-info-list">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Street Name, City, Country</li>
+                            <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                            <li><i class="fas fa-envelope"></i> info@CodeEmpire.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content -->
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CodeEmpire</h2>
+                    <p>Creating digital excellence since 2010</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#web">Web Development</a></li>
+                            <li><a href="#app">App Development</a></li>
+                            <li><a href="#design">UI/UX Design</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Branding</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Street Name, City, Country</li>
+                            <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                            <li><i class="fas fa-envelope"></i> info@CodeEmpire.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="copyright">© 2023 CodeEmpire. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

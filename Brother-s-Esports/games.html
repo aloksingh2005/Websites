@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Brother's eSports</title>
+    <meta name="description"
+        content="Explore the mobile games featured on Brother's eSports platform including BGMI, Free Fire, Call of Duty Mobile, and more.">
+    <meta name="keywords" content="mobile games, esports games, BGMI, Free Fire, COD Mobile, gaming india">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/games.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Brother's eSports Logo">
+                    <div>
+                        <h1>Brother's</h1>
+                        <h2>eSports</h2>
+                    </div>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Our Services</a></li>
+                        <li class="nav-item"><a href="games.html" class="nav-link active">Games</a></li>
+                        <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                        <li class="nav-item"><a href="tournaments.html" class="nav-link">Tournaments</a></li>
+                        <li class="nav-item"><a href="benefits.html" class="nav-link">Player Benefits</a></li>
+                        <li class="nav-item"><a href="spectator.html" class="nav-link">Spectator Program</a></li>
+                        <li class="nav-item"><a href="news.html" class="nav-link">News/Blog</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="https://platform.brothersesports.com/login" class="btn">LOGIN</a>
+                    <a href="https://platform.brothersesports.com/register" class="btn btn-primary">REGISTER</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Games</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Games</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="games-overview">
+                <div class="section-title">
+                    <h2>Featured Mobile Games</h2>
+                </div>
+                <p>At Brother's eSports, we focus on the most popular and competitive mobile games in India. Our
+                    platform supports tournaments, coaching, and community engagement for these titles. Whether you're a
+                    casual player or aspiring professional, we have competitions suitable for all skill levels.</p>
+            </div>
+
+            <div class="game-filter">
+                <button class="filter-btn active" data-filter="all">All Games</button>
+                <button class="filter-btn" data-filter="battle-royale">Battle Royale</button>
+                <button class="filter-btn" data-filter="fps">FPS</button>
+                <button class="filter-btn" data-filter="moba">MOBA</button>
+                <button class="filter-btn" data-filter="racing">Racing</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+
+            <div class="games-grid">
+                <!-- BGMI -->
+                <div class="game-card" data-category="battle-royale">
+                    <div class="game-poster">
+                        <img src="assets/images/games/bgmi.jpg" alt="Battlegrounds Mobile India"
+                            title="Create an image of Battlegrounds Mobile India (BGMI) gameplay. Show intense battle royale action with players engaging in combat in a realistic environment. Include UI elements specific to BGMI such as the minimap, health bar, and weapon indicators. The scene should be dynamic with players using cover, vehicles, and various weapons. The overall aesthetic should match BGMI's realistic art style with vivid colors and detailed environments.">
+                        <div class="game-overlay">
+                            <a href="game-detail-bgmi.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Battlegrounds Mobile India</h3>
+                        <div class="game-meta">
+                            <div class="game-genre">Battle Royale</div>
+                            <div class="game-popularity">
+                                <i class="fas fa-fire"></i>
+                                <span>Very High</span>
+                            </div>
+                        </div>
+                        <p>The Indian version of PUBG Mobile, featuring intense battle royale action where 100 players
+                            compete to be the last one standing.</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>42 Active Tournaments</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>25,000+ Players</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹50,000+ Prize Pool</span>
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <a href="tournaments.html?game=bgmi" class="btn">View Tournaments</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Free Fire -->
+                <div class="game-card" data-category="battle-royale">
+                    <div class="game-poster">
+                        <img src="assets/images/games/freefire.jpg" alt="Garena Free Fire"
+                            title="Create an image showcasing Garena Free Fire gameplay. Display a fast-paced battle royale scene with colorful characters using the game's distinctive weapons and abilities. Include the game's characteristic cartoon-style graphics and vibrant environment. Show multiple players in action with visible UI elements specific to Free Fire. The image should capture the game's arcade-like feel and accessibility compared to more realistic battle royale games.">
+                        <div class="game-overlay">
+                            <a href="game-detail-freefire.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Garena Free Fire</h3>
+                        <div class="game-meta">
+                            <div class="game-genre">Battle Royale</div>
+                            <div class="game-popularity">
+                                <i class="fas fa-fire"></i>
+                                <span>Very High</span>
+                            </div>
+                        </div>
+                        <p>A fast-paced battle royale game with 10-minute matches where 50 players fight for survival on
+                            a remote island.</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>38 Active Tournaments</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>22,000+ Players</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹45,000+ Prize Pool</span>
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <a href="tournaments.html?game=freefire" class="btn">View Tournaments</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call of Duty Mobile -->
+                <div class="game-card" data-category="fps">
+                    <div class="game-poster">
+                        <img src="assets/images/games/codm.jpg" alt="Call of Duty Mobile"
+                            title="Create an image depicting Call of Duty Mobile gameplay. Show an intense first-person shooter perspective with realistic military combat. Include recognizable COD elements like killstreaks, loadout weapons, and the game's distinctive HUD. The scene should be action-packed with players engaged in tactical combat in one of the game's signature maps. The visual style should reflect COD Mobile's high-quality graphics with realistic lighting and detailed character models.">
+                        <div class="game-overlay">
+                            <a href="game-detail-codm.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Call of Duty Mobile</h3>
+                        <div class="game-meta">
+                            <div class="game-genre">FPS</div>
+                            <div class="game-popularity">
+                                <i class="fas fa-fire"></i>
+                                <span>High</span>
+                            </div>
+                        </div>
+                        <p>The mobile version of the iconic Call of Duty franchise, featuring both multiplayer modes and
+                            battle royale gameplay.</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>28 Active Tournaments</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>18,000+ Players</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹35,000+ Prize Pool</span>
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <a href="tournaments.html?game=codm" class="btn">View Tournaments</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clash Royale -->
+                <div class="game-card" data-category="moba">
+                    <div class="game-poster">
+                        <img src="assets/images/games/clashroyale.jpg" alt="Clash Royale"
+                            title="Create an image featuring Clash Royale gameplay. Show the distinctive top-down arena view with cartoon-style characters and buildings battling. Include the game's card system, elixir bar, and towers. The scene should capture the strategic MOBA elements with multiple units engaged in combat. The visual style should maintain Clash Royale's bright, colorful aesthetic with clear character designs and effects.">
+                        <div class="game-overlay">
+                            <a href="game-detail-clashroyale.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Clash Royale</h3>
+                        <div class="game-meta">
+                            <div class="game-genre">Strategy</div>
+                            <div class="game-popularity">
+                                <i class="fas fa-fire"></i>
+                                <span>Medium</span>
+                            </div>
+                        </div>
+                        <p>A real-time strategy game where players collect and upgrade cards featuring Clash of Clans
+                            troops and spells to defeat opponents.</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>18 Active Tournaments</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>12,000+ Players</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹20,000+ Prize Pool</span>
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <a href="tournaments.html?game=clashroyale" class="btn">View Tournaments</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Legends -->
+                <div class="game-card" data-category="moba">
+                    <div class="game-poster">
+                        <img src="assets/images/games/mobilelegends.jpg" alt="Mobile Legends"
+                            title="Create an image showing Mobile Legends: Bang Bang gameplay. Display a typical 5v5 MOBA match with heroes battling in one of the game's lanes. Include the game's distinctive UI elements, minimap, and skill buttons. The scene should showcase hero abilities with colorful effects and the game's characteristic art style. Focus on team-based combat with multiple heroes engaging with each other using varied abilities.">
+                        <div class="game-overlay">
+                            <a href="game-detail-mobilelegends.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Mobile Legends: Bang Bang</h3>
+                        <div class="game-meta">
+                            <div class="game-genre">MOBA</div>
+                            <div class="game-popularity">
+                                <i class="fas fa-fire"></i>
+                                <span>Medium</span>
+                            </div>
+                        </div>
+                        <p>A 5v5 MOBA game designed for mobile with 10-minute matches and a variety of heroes with
+                            unique abilities.</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>15 Active Tournaments</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>10,000+ Players</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹15,000+ Prize Pool</span>
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <a href="tournaments.html?game=mobilelegends" class="btn">View Tournaments</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asphalt 9 -->
+                <div class="game-card" data-category="racing">
+                    <div class="game-poster">
+                        <img src="assets/images/games/asphalt9.jpg" alt="Asphalt 9: Legends"
+                            title="Create an image featuring Asphalt 9: Legends gameplay. Show a high-speed racing scene with exotic, detailed hypercars racing through a visually stunning environment. Include motion blur, lighting effects, and the game's characteristic glossy, high-fidelity graphics. The scene should capture the arcade racing experience with dramatic drifts, jumps, or nitro boosts. Include UI elements specific to Asphalt 9 such as the speed indicator and nitro gauge.">
+                        <div class="game-overlay">
+                            <a href="game-detail-asphalt9.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Asphalt 9: Legends</h3>
+                        <div class="game-meta">
+                            <div class="game-genre">Racing</div>
+                            <div class="game-popularity">
+                                <i class="fas fa-fire"></i>
+                                <span>Medium</span>
+                            </div>
+                        </div>
+                        <p>A high-speed racing game featuring real hypercars from renowned manufacturers like Ferrari,
+                            Porsche, and Lamborghini.</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>12 Active Tournaments</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>8,000+ Players</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹10,000+ Prize Pool</span>
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <a href="tournaments.html?game=asphalt9" class="btn">View Tournaments</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Request Section -->
+    <section class="section game-request-section">
+        <div class="container">
+            <div class="game-request-content">
+                <div class="section-title">
+                    <h2>Don't See Your Game?</h2>
+                </div>
+                <p>We're constantly expanding our game library based on player demand. If you'd like to see your
+                    favorite mobile game featured on our platform, let us know!</p>
+
+                <div class="request-form">
+                    <div class="form-group">
+                        <input type="text" id="game-name" placeholder="Game Name">
+                    </div>
+                    <div class="form-group">
+                        <select id="game-category">
+                            <option value="">Select Game Category</option>
+                            <option value="battle-royale">Battle Royale</option>
+                            <option value="fps">FPS</option>
+                            <option value="moba">MOBA</option>
+                            <option value="racing">Racing</option>
+                            <option value="sports">Sports</option>
+                            <option value="strategy">Strategy</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="game-request-message"
+                            placeholder="Why should we add this game? Tell us about its popularity and competitive potential."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Stats Section -->
+    <section class="section game-stats-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Platform Statistics</h2>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-title">Supported Games</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">75,000+</div>
+                    <div class="stat-title">Active Players</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-number">200+</div>
+                    <div class="stat-title">Monthly Tournaments</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="stat-number">₹5 Lakh+</div>
+                    <div class="stat-title">Monthly Prize Pool</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Tournaments -->
+    <section class="section upcoming-tournaments-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Upcoming Featured Tournaments</h2>
+                <p>Register now for these exclusive competitive events with amazing prize pools</p>
+            </div>
+
+            <div class="tournaments-slider">
+                <div class="tournament-slide">
+                    <div class="tournament-card">
+                        <div class="tournament-image">
+                            <img src="assets/images/tournaments/bgmi-tournament.jpg" alt="BGMI Championship"
+                                title="Create an image depicting a BGMI esports tournament. Show a professional setting with players focused on their mobile devices, potentially wearing team jerseys. Include spectator screens displaying the BGMI match in progress and tournament brackets/standings in the background. The atmosphere should feel competitive and professional with branded elements in purple and blue. Include audience members watching the action and production crew to convey the scale of the event.">
+                            <div class="tournament-date">
+                                <div class="date-day">15</div>
+                                <div class="date-month">Aug</div>
+                            </div>
+                        </div>
+                        <div class="tournament-content">
+                            <div class="tournament-game">
+                                <img src="assets/images/games/bgmi-icon.png" alt="BGMI"
+                                    title="Create a simple, recognizable icon for Battlegrounds Mobile India (BGMI). The icon should feature elements that instantly identify the game, such as a helmet, parachute, or the game's logo mark. Use the game's official colors and maintain a clean, simple design that works well at small sizes. Create as a PNG with transparent background.">
+                                <span>BGMI</span>
+                            </div>
+                            <h3>Weekly Pro Championship</h3>
+                            <div class="tournament-details">
+                                <div class="detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>100 Teams</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>₹25,000 Prize</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Pro Series</span>
+                                </div>
+                            </div>
+                            <a href="tournament-details.html?id=bgmi-pro-123" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tournament-slide">
+                    <div class="tournament-card">
+                        <div class="tournament-image">
+                            <img src="assets/images/tournaments/free-fire-tournament.jpg" alt="Free Fire Cup"
+                                title="Create an image illustrating a Free Fire esports tournament. Show players competing in an organized setting with mobile devices, potentially in team pods or booths. Include large displays showing Free Fire gameplay and tournament information. The setting should appear professional with event branding, lighting, and an energetic atmosphere. Include team coaches, referees, and audience members to convey the competitive environment.">
+                            <div class="tournament-date">
+                                <div class="date-day">18</div>
+                                <div class="date-month">Aug</div>
+                            </div>
+                        </div>
+                        <div class="tournament-content">
+                            <div class="tournament-game">
+                                <img src="assets/images/games/icons/freefire-icon.png" alt="Free Fire"
+                                    title="Create a simple, recognizable icon for Garena Free Fire. The icon should incorporate distinctive elements from the game such as its logo or a recognizable character/weapon. Use the game's vibrant color scheme and maintain a clean design that remains identifiable at small sizes. Create as a PNG with transparent background.">
+                                <span>Free Fire</span>
+                            </div>
+                            <h3>Squad Showdown Cup</h3>
+                            <div class="tournament-details">
+                                <div class="detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>48 Teams</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>₹15,000 Prize</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Open Series</span>
+                                </div>
+                            </div>
+                            <a href="tournament-details.html?id=ff-squad-456" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tournament-slide">
+                    <div class="tournament-card">
+                        <div class="tournament-image">
+                            <img src="assets/images/tournaments/cod-tournament.jpg" alt="COD Mobile Tournament"
+                                title="Create an image showcasing a Call of Duty Mobile tournament. Display players focused on mobile devices in a professional esports venue with COD Mobile branding and screens showing gameplay. Include production elements like commentator desks, team areas, and audience seating. The atmosphere should feel intense and competitive with dramatic lighting. Show players wearing headphones and team jerseys to emphasize the professional nature of the competition.">
+                            <div class="tournament-date">
+                                <div class="date-day">20</div>
+                                <div class="date-month">Aug</div>
+                            </div>
+                        </div>
+                        <div class="tournament-content">
+                            <div class="tournament-game">
+                                <img src="assets/images/games/icons/codm-icon.png" alt="COD Mobile"
+                                    title="Create a simple, recognizable icon for Call of Duty Mobile. The icon should feature elements that identify the COD franchise, such as the game's logo or a military-themed element. Use the game's official colors and maintain a professional, clean design that works well at small sizes. Create as a PNG with transparent background.">
+                                <span>COD Mobile</span>
+                            </div>
+                            <h3>5v5 Domination Masters</h3>
+                            <div class="tournament-details">
+                                <div class="detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>32 Teams</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>₹20,000 Prize</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Pro Series</span>
+                                </div>
+                            </div>
+                            <a href="tournament-details.html?id=codm-dom-789" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-tournaments">
+                <a href="tournaments.html" class="btn btn-outline pulse-animation">View All Tournaments <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>READY TO COMPETE?</h2>
+                <p>Join thousands of mobile gamers and start your competitive journey today</p>
+                <div class="cta-buttons">
+                    <a href="https://platform.brothersesports.com/register" class="btn cta-btn">REGISTER NOW</a>
+                    <a href="tournaments.html" class="btn cta-btn-outline">BROWSE TOURNAMENTS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-widget">
+                    <h4>About Brother's eSports</h4>
+                    <p>India's premier mobile eSports platform offering tournaments, rewards, and a community for
+                        gamers.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/brothersesports" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/brothersesports" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/brothersesports" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/brothersesports" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://discord.gg/brothersesports" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="spectator.html">Spectator Program</a></li>
+                        <li><a href="news.html">News/Blog</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">info@brothersesports.com</div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">+91 9876543210</div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">Mumbai, Maharashtra, India</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="fairplay.html">Fair Play Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Brother's eSports. All rights reserved.</p>
+                <a href="#" id="back-to-top"><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/games.js"></script>
+</body>
+
+</html>

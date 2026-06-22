@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Brother's eSports</title>
+    <meta name="description"
+        content="Register an account with Brother's eSports to join India's premier mobile gaming platform.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Brother's eSports Logo">
+                    <div>
+                        <h1>Brother's</h1>
+                        <h2>eSports</h2>
+                    </div>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Our Services</a></li>
+                        <li class="nav-item"><a href="games.html" class="nav-link">Games</a></li>
+                        <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                        <li class="nav-item"><a href="tournaments.html" class="nav-link">Tournaments</a></li>
+                        <li class="nav-item"><a href="benefits.html" class="nav-link">Player Benefits</a></li>
+                        <li class="nav-item"><a href="spectator.html" class="nav-link">Spectator Program</a></li>
+                        <li class="nav-item"><a href="news.html" class="nav-link">News/Blog</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="login.html" class="btn">LOGIN</a>
+                    <a href="register.html" class="btn btn-primary active">REGISTER</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-form-container">
+                    <div class="auth-header">
+                        <h2>CREATE YOUR ACCOUNT</h2>
+                        <p>Join India's premier mobile eSports platform</p>
+                    </div>
+                    <form id="register-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required pattern="[0-9]{10}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="password" name="password" placeholder="Create a password" required minlength="8">
+                                <button type="button" class="password-toggle" onclick="togglePassword('password')">
+                                    <i class="far fa-eye"></i>
+                                </button>
+                            </div>
+                            <div class="password-requirements">
+                                <p>Password must contain:</p>
+                                <ul>
+                                    <li id="length"><i class="fas fa-circle"></i> At least 8 characters</li>
+                                    <li id="uppercase"><i class="fas fa-circle"></i> One uppercase letter</li>
+                                    <li id="number"><i class="fas fa-circle"></i> One number</li>
+                                    <li id="special"><i class="fas fa-circle"></i> One special character</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_password">Confirm Password</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+                                <button type="button" class="password-toggle" onclick="togglePassword('confirm_password')">
+                                    <i class="far fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="games">Preferred Games</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-gamepad"></i>
+                                <select id="games" name="games" multiple>
+                                    <option value="free-fire">Free Fire</option>
+                                    <option value="bgmi">BGMI</option>
+                                    <option value="cod-mobile">Call of Duty Mobile</option>
+                                    <option value="clash-royale">Clash Royale</option>
+                                    <option value="valorant">Valorant Mobile</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Send me news and updates about tournaments and promotions</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">CREATE ACCOUNT</button>
+                    </form>
+                    <div class="social-login">
+                        <p>Or register with</p>
+                        <div class="social-buttons">
+                            <button class="social-btn google">
+                                <i class="fab fa-google"></i>
+                                <span>Google</span>
+                            </button>
+                            <button class="social-btn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="auth-footer">
+                        <p>Already have an account? <a href="login.html">Login Now</a></p>
+                    </div>
+                </div>
+                <div class="auth-info">
+                    <div class="auth-info-content">
+                        <h3>WHY JOIN BROTHER'S ESPORTS?</h3>
+                        <ul class="auth-benefits">
+                            <li><i class="fas fa-check-circle"></i> Daily tournaments with real cash prizes</li>
+                            <li><i class="fas fa-check-circle"></i> Connect with 10,000+ gamers across India</li>
+                            <li><i class="fas fa-check-circle"></i> Fair play environment with spectator system</li>
+                            <li><i class="fas fa-check-circle"></i> Participate in tournaments for popular mobile games</li>
+                            <li><i class="fas fa-check-circle"></i> Opportunity to be scouted for professional teams</li>
+                            <li><i class="fas fa-check-circle"></i> Dedicated support for all players</li>
+                            <li><i class="fas fa-check-circle"></i> Earn rewards based on your performance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Need Help Section -->
+    <section class="help-cta-section">
+        <div class="container">
+            <div class="help-cta-container">
+                <div class="help-cta-content">
+                    <h3>Need Help?</h3>
+                    <p>Our support team is available 24/7 to assist you with any questions</p>
+                </div>
+                <a href="support.html" class="btn btn-secondary">Contact Support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links-column">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Brother's eSports Logo">
+                        <div>
+                            <h3>Brother's</h3>
+                            <h4>eSports</h4>
+                        </div>
+                    </div>
+                    <p class="footer-description">India's premier mobile eSports platform for tournaments, competitions, and gaming community.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h5>COMPANY</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h5>SERVICES</h5>
+                        <ul>
+                            <li><a href="tournaments.html">Tournaments</a></li>
+                            <li><a href="spectator.html">Spectator Program</a></li>
+                            <li><a href="games.html">Supported Games</a></li>
+                            <li><a href="benefits.html">Player Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h5>SUPPORT</h5>
+                        <ul>
+                            <li><a href="support.html">Help Center</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="refund.html">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h5>CONTACT US</h5>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> info@brothersesports.com</li>
+                            <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Brother's eSports. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function togglePassword(inputId) {
+            const passwordInput = document.getElementById(inputId);
+            const icon = passwordInput.nextElementSibling.querySelector('i');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        }
+
+        // Password validation
+        const passwordInput = document.getElementById('password');
+        const lengthCheck = document.getElementById('length');
+        const uppercaseCheck = document.getElementById('uppercase');
+        const numberCheck = document.getElementById('number');
+        const specialCheck = document.getElementById('special');
+        const confirmPassword = document.getElementById('confirm_password');
+
+        passwordInput.addEventListener('input', function() {
+            const password = passwordInput.value;
+            
+            // Check length
+            if (password.length >= 8) {
+                lengthCheck.classList.add('valid');
+                lengthCheck.querySelector('i').className = 'fas fa-check-circle';
+            } else {
+                lengthCheck.classList.remove('valid');
+                lengthCheck.querySelector('i').className = 'fas fa-circle';
+            }
+            
+            // Check uppercase
+            if (/[A-Z]/.test(password)) {
+                uppercaseCheck.classList.add('valid');
+                uppercaseCheck.querySelector('i').className = 'fas fa-check-circle';
+            } else {
+                uppercaseCheck.classList.remove('valid');
+                uppercaseCheck.querySelector('i').className = 'fas fa-circle';
+            }
+            
+            // Check number
+            if (/[0-9]/.test(password)) {
+                numberCheck.classList.add('valid');
+                numberCheck.querySelector('i').className = 'fas fa-check-circle';
+            } else {
+                numberCheck.classList.remove('valid');
+                numberCheck.querySelector('i').className = 'fas fa-circle';
+            }
+            
+            // Check special character
+            if (/[^A-Za-z0-9]/.test(password)) {
+                specialCheck.classList.add('valid');
+                specialCheck.querySelector('i').className = 'fas fa-check-circle';
+            } else {
+                specialCheck.classList.remove('valid');
+                specialCheck.querySelector('i').className = 'fas fa-circle';
+            }
+        });
+
+        // Confirm password validation
+        confirmPassword.addEventListener('input', function() {
+            if (confirmPassword.value === passwordInput.value) {
+                confirmPassword.setCustomValidity('');
+            } else {
+                confirmPassword.setCustomValidity('Passwords do not match');
+            }
+        });
+
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would add the registration functionality
+            // For now, let's just show an alert
+            alert('Registration functionality will be implemented soon!');
+        });
+    </script>
+</body>
+
+</html> 

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SR Computer | Technology Solutions in Bihar</title>
+    <meta name="description"
+        content="Contact SR Computer for technology solutions in Bihar. Get in touch for sales, repairs, installations, and professional services.">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-on-scroll">
+                    Contact SR Computer
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    Get in touch with us for sales, repairs, installations, and professional technology services across
+                    Bihar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    We're here to help with all your technology needs
+                </p>
+            </div>
+
+            <div class="contact-info-grid">
+                <div class="contact-card card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="contact-title">Our Location</h3>
+                    <p class="contact-text">
+                        Bihar, India<br>
+                        Serving all districts across the state
+                    </p>
+                </div>
+
+                <div class="contact-card card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-title">Call Us</h3>
+                    <p class="contact-text">
+                        <a href="tel:+919128199405">+91 91281 99405</a><br>
+                        Mon-Sat: 9:00 AM - 8:00 PM
+                    </p>
+                </div>
+
+                <div class="contact-card card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Email Us</h3>
+                    <p class="contact-text">
+                        <a href="mailto:info@srcomputer.com">info@srcomputer.com</a><br>
+                        We'll respond within 24 hours
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="section-subtitle">
+                    Fill out the form below and we'll get back to you as soon as possible
+                </p>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form card animate-on-scroll">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="cctv">CCTV Camera Systems</option>
+                            <option value="laptop">Laptop/Desktop Services</option>
+                            <option value="printer">Printer Services</option>
+                            <option value="sales">Product Sales</option>
+                            <option value="other">Other Services</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-map animate-on-scroll">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt fa-3x"></i>
+                        <p>Map of Our Service Area in Bihar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-cta animate-on-scroll">
+                <h2 class="contact-title">Need Immediate Assistance?</h2>
+                <p class="contact-subtitle">
+                    Call us now for urgent support and service
+                </p>
+                <div class="contact-buttons">
+                    <a href="tel:+919128199405" class="btn btn-primary">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript Files -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Load header and footer dynamically
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('pages/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                    // Initialize header functionality after loading
+                    if (typeof window.initHeader === 'function') {
+                        window.initHeader();
+                    }
+                    // Initialize theme toggle after header is loaded
+                    if (typeof window.initThemeToggle === 'function') {
+                        window.initThemeToggle();
+                    } else {
+                        // If initThemeToggle is not available, try to load the script
+                        const script = document.createElement('script');
+                        script.src = 'js/theme-toggle.js';
+                        script.onload = function() {
+                            if (typeof window.initThemeToggle === 'function') {
+                                window.initThemeToggle();
+                            }
+                        };
+                        document.head.appendChild(script);
+                    }
+                })
+                .catch(error => console.error('Error loading header:', error));
+
+            fetch('pages/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactForm = document.querySelector('.contact-form');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Form validation
+                    if (validateForm(this)) {
+                        // In a real implementation, you would send this to your server
+                        // For now, we'll just show a success message
+                        showMessage('Thank you for your message! We will contact you soon.', 'success');
+                        this.reset();
+                    } else {
+                        showMessage('Please fill in all required fields correctly.', 'error');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+Standard HTML Template License
+
+This template is licensed under the Standard Marketplace License.
+
+1. Rights
+You are granted a non-exclusive, non-transferable license to use this template for one single end product for yourself or for one client.
+
+2. Restrictions
+You may NOT:
+- Redistribute or resell this template.
+- Share the source files with others.
+- Use this template in an on-demand generation service.
+
+3. Attribution
+No attribution is required, but appreciated.
+
+4. Disclaimer
+This software is provided "as is" without warranty of any kind.

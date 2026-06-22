@@ -1,0 +1,10 @@
+﻿Changelog
+=========
+
+v1.0.0 - 2026-01-31
+-------------------
+- Initial Release
+- 7 Pages included
+- Responsive Design
+- SEO & Performance Optimization
+

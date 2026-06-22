@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - NexCorp Template</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/documentation.css">
+</head>
+
+<body>
+
+    <header class="doc-header">
+        <div class="container">
+            <h1>NexCorp Template Documentation</h1>
+            <p>A comprehensive guide to customizing your new website.</p>
+            <a href="../index.html" class="btn" style="background: rgba(255,255,255,0.2);">Back to Template</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- 1. Getting Started -->
+        <section class="doc-section">
+            <h2>1. Getting Started</h2>
+            <p>Welcome to the NexCorp Business Template. This template is built with pure HTML5, CSS3, and Vanilla
+                JavaScript, making it accessible and easy to customize without needing complex build tools.</p>
+
+            <h3>Folder Structure</h3>
+            <pre>
+/
+├── index.html          # Homepage
+├── about.html          # About Us Page
+├── services.html       # Services Page
+├── projects.html       # Projects/Portfolio Page
+├── pricing.html        # Pricing Page
+├── blog.html           # Blog Listing Page
+├── contact.html        # Contact Page
+├── documentation.html  # This File
+│
+└── assets/
+    ├── css/
+    │   └── style.css   # Main Stylesheet
+    ├── js/
+    │   └── main.js     # Main JavaScript File
+    └── images/         # Placeholders (Replace with your own)</pre>
+        </section>
+
+        <!-- 2. Editing Content -->
+        <section class="doc-section">
+            <h2>2. Editing Content</h2>
+            <p>To edit the text on any page, simply open the corresponding <code>.html</code> file in any code editor
+                (like VS Code, Notepad++, or Sublime Text).</p>
+            <p>Locate the text you want to change between the HTML tags and type your new content.</p>
+
+            <h3>Example: Changing a Headline</h3>
+            <p>Find this in <code>index.html</code>:</p>
+            <pre>&lt;h1&gt;Innovate Your Business&lt;/h1&gt;</pre>
+            <p>Change it to:</p>
+            <pre>&lt;h1&gt;Welcome to My Company&lt;/h1&gt;</pre>
+        </section>
+
+        <!-- 3. Customizing Colors & Fonts -->
+        <section class="doc-section">
+            <h2>3. Customizing Colors & Fonts</h2>
+            <p>All global styles are managed in <code>assets/css/style.css</code> using CSS Variables. You can change
+                the entire color scheme by editing the variables at the top of the file.</p>
+
+            <h3>Change Brand Colors</h3>
+            <p>Open <code>assets/css/style.css</code> and find the <code>:root</code> section:</p>
+            <pre>
+:root {
+    /* Change these hex codes to your brand colors */
+    --primary-color: #0f172a;  /* Dark Blue */
+    --accent-color: #2563eb;   /* Bright Blue */
+}</pre>
+
+            <h3>Change Fonts</h3>
+            <p>We use Google Fonts (Inter). To change the font:</p>
+            <ol>
+                <li>Go to <a href="https://fonts.google.com" target="_blank">fonts.google.com</a> and select a font.
+                </li>
+                <li>Replace the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> of every HTML file.</li>
+                <li>Update the <code>--font-heading</code> and <code>--font-body</code> variables in
+                    <code>style.css</code>.
+                </li>
+            </ol>
+        </section>
+
+        <!-- 4. Adding/Removing Sections -->
+        <section class="doc-section">
+            <h2>4. Adding & Removing Sections</h2>
+            <p>The template uses a modular structure based on <code>&lt;section&gt;</code> tags. Each section typically
+                has a comment above it explaining what it is.</p>
+
+            <h3>To Remove a Section</h3>
+            <p>Simply delete the entire block starting from <code>&lt;section&gt;</code> to
+                <code>&lt;/section&gt;</code>.
+            </p>
+
+            <h3>To Add a New Section</h3>
+            <p>Copy an existing section code block and paste it where you want the new section to appear. Update the
+                content classes as needed.</p>
+        </section>
+
+        <!-- 5. Creating New Pages -->
+        <section class="doc-section">
+            <h2>5. Creating New Pages</h2>
+            <p>To create a new page with the same design, the easiest way is to duplicate <code>about.html</code> or
+                <code>services.html</code>.
+            </p>
+            <ol>
+                <li>Copy and paste <code>about.html</code>.</li>
+                <li>Rename it (e.g., <code>faq.html</code>).</li>
+                <li>Open the new file and update the Title, Meta Description, and Breadcrumb.</li>
+                <li>Update the Navigation Menu in the Header to link to your new page. <strong>Note:</strong> You will
+                    need to update the navigation menu on <em>all</em> pages if you add a new link to the main menu.
+                </li>
+            </ol>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem; color: #64748b;">
+            <p>&copy; 2026 NexCorp Template. All Rights Reserved. This site is open source. <a href="#"
+                    style="color: inherit; text-decoration: underline;">Improve this page</a>.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

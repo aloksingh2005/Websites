@@ -1,0 +1,60 @@
+/* Pricing Page Styles */
+
+/* Comparison Table */
+.pricing-table-wrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-white);
+    min-width: 600px;
+}
+
+.pricing-table thead tr {
+    background: var(--primary-color);
+    color: var(--text-white);
+}
+
+.pricing-table th {
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.pricing-table th:first-child {
+    text-align: left;
+}
+
+.pricing-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.pricing-table td:first-child {
+    font-weight: 500;
+    text-align: left;
+}
+
+.pricing-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Icon Colors */
+.icon-check {
+    color: var(--accent-color);
+}
+
+.icon-cross {
+    color: #cbd5e1;
+}
+
+/* Accordion Specifics */
+.accordion-content p {
+    margin-bottom: 0;
+    color: var(--text-light);
+}
